@@ -1,0 +1,28 @@
+extends ../layouts/admin
+
+block content
+  h1 Update Test
+
+  .row
+    .span4 Name
+    .span8
+      input(type="text", name="name", value=test.name, disabled="true")
+
+  .row
+    .span4 Active
+    .span8
+
+      input(type="radio", name="active", value="true")
+      |&nbsp;Yes&nbsp;
+      input(type="radio", name="active", value="false")
+      |&nbsp;No
+
+  .row
+    .span4 Variants
+    .span8
+      input(type="text", name="variants", value=test.variants)
+      br
+      input(type="text", name="distribution", value=test.distribution)
+
+  script(type="text/javascript")
+    var test = !{JSON.stringify(test)}

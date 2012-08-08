@@ -1,0 +1,3 @@
+[submodule "node_modules/honcho"]
+	path = node_modules/honcho
+	url = git@github.com:grippy/honcho.git
